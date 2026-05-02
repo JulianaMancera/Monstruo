@@ -1,42 +1,42 @@
 name: monstruo
-description: A gamified habit tracker with virtual monster companions.
- 
+description: Your habits. Your monster. An offline-first gamified Pokémon-inspired habit tracker built with Flutter.
+
 publish_to: 'none'
 version: 1.0.0+1
- 
+
 environment:
   sdk: '>=3.0.0 <4.0.0'
- 
+
 dependencies:
   flutter:
     sdk: flutter
- 
+
   # State Management
   flutter_riverpod: ^2.5.1
- 
+
   # Local Database (Offline-first)
   hive_flutter: ^1.1.0
- 
-  # UI & Fonts
+
+  # UI & Charts
   google_fonts: ^8.1.0
   fl_chart: ^1.2.0
- 
+
   # Utils
   uuid: ^4.4.0
   intl: ^0.20.2
- 
-  # Notifications
+
+  # Notifications (mobile only)
   flutter_local_notifications: ^21.0.0
- 
+
   cupertino_icons: ^1.0.8
- 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
   hive_generator: ^2.0.1
   build_runner: ^2.4.9
- 
+
 flutter:
   uses-material-design: true
   assets:

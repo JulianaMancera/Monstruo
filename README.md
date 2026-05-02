@@ -1,5 +1,5 @@
 # Monstruo
-Your habits. Your monster. An offline-first gamified Pokémon-inspired habit tracker built with Flutter.
+Your habits. Your monster. An offline-first gamified habit tracker built with Flutter.
 
 This project is a starting point for a Flutter application.
 
