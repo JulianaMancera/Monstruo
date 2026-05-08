@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../features/pet/screens/pet_screen.dart';
 import '../../features/habits/screens/habits_screen.dart';
+import '../../features/mood/screens/mood_screen.dart';
+import '../../features/watchlist/screens/watchlist_screen.dart';
 import '../../features/dashboard/screens/stats_screen.dart';
 import '../theme/app_theme.dart';
 
@@ -13,6 +15,8 @@ class MonstruoApp extends ConsumerWidget {
   static const _screens = [
     PetScreen(),
     HabitsScreen(),
+    MoodScreen(),
+    WatchlistScreen(),
     StatsScreen(),
   ];
 
@@ -43,7 +47,17 @@ class MonstruoApp extends ConsumerWidget {
               BottomNavigationBarItem(
                 icon: Text('📋', style: TextStyle(fontSize: 22)),
                 activeIcon: Text('📋', style: TextStyle(fontSize: 26)),
-                label: 'Habits',
+                label: 'Grind',
+              ),
+              BottomNavigationBarItem(
+                icon: Text('💭', style: TextStyle(fontSize: 22)),
+                activeIcon: Text('💭', style: TextStyle(fontSize: 26)),
+                label: 'Mood',
+              ),
+              BottomNavigationBarItem(
+                icon: Text('🎬', style: TextStyle(fontSize: 22)),
+                activeIcon: Text('🎬', style: TextStyle(fontSize: 26)),
+                label: 'The List',
               ),
               BottomNavigationBarItem(
                 icon: Text('📊', style: TextStyle(fontSize: 22)),

@@ -18,20 +18,20 @@ class AppTheme {
 
   // Category colors
   static const Map<String, Color> categoryColors = {
-    'health': Color(0xFF6BCB77),
-    'mind':   Color(0xFF4DAEF0),
-    'work':   Color(0xFFFFD93D),
-    'social': Color(0xFFFF6584),
-    'self':   Color(0xFF9C94FF),
+    'glow':  Color(0xFF6BCB77),
+    'brain': Color(0xFF4DAEF0),
+    'grind': Color(0xFFFFD93D),
+    'vibe':  Color(0xFFFF6584),
+    'feels': Color(0xFF9C94FF),
   };
 
   // Category icons
   static const Map<String, String> categoryIcons = {
-    'health': '💪',
-    'mind':   '📚',
-    'work':   '💼',
-    'social': '😄',
-    'self':   '🧘',
+    'glow':  '✨',
+    'brain': '🧠',
+    'grind': '💻',
+    'vibe':  '🫂',
+    'feels': '🫶',
   };
 
   static ThemeData get darkTheme {

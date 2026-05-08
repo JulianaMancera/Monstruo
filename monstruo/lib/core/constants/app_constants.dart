@@ -46,16 +46,22 @@ class AppConstants {
   static const double moodNeutral = 0.5;
   static const double moodSad = 0.2;
 
-  // Hive box names
-  static const String petBox = 'pet_box';
-  static const String habitsBox = 'habits_box';
+  // XP for new trackers
+  static const int xpPerMoodLog        = 5;
+  static const int xpWatchlistComplete = 15;
 
-  // Categories
+  // Hive box names
+  static const String petBox       = 'pet_box';
+  static const String habitsBox    = 'habits_box';
+  static const String moodBox      = 'mood_box';
+  static const String watchlistBox = 'watchlist_box';
+
+  // Habit categories (Gen Z rename)
   static const List<String> categories = [
-    'health',
-    'mind',
-    'work',
-    'social',
-    'self',
+    'glow',   // health/wellness
+    'brain',  // mind/learning
+    'grind',  // work/study
+    'vibe',   // social
+    'feels',  // self-care
   ];
 }
