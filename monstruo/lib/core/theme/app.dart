@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../features/pet/screens/pet_screen.dart';
-import '../../features/habits/screens/habits_screen.dart';
-import '../../features/dashboard/screens/stats_screen.dart';
+import '../../features/entries/screens/log_screen.dart';
+import '../../features/weekly/screens/weekly_screen.dart';
+import '../../features/settings/screens/settings_screen.dart';
 import '../theme/app_theme.dart';
 
 final currentTabProvider = StateProvider<int>((ref) => 0);
@@ -11,9 +11,9 @@ class MonstruoApp extends ConsumerWidget {
   const MonstruoApp({super.key});
 
   static const _screens = [
-    PetScreen(),
-    HabitsScreen(),
-    StatsScreen(),
+    LogScreen(),
+    WeeklyScreen(),
+    SettingsScreen(),
   ];
 
   @override
@@ -25,7 +25,8 @@ class MonstruoApp extends ConsumerWidget {
       bottomNavigationBar: Container(
         decoration: const BoxDecoration(
           color: AppTheme.surface,
-          border: Border(top: BorderSide(color: AppTheme.surfaceLight, width: 1)),
+          border: Border(
+            top: BorderSide(color: AppTheme.surfaceLight, width: 1)),
         ),
         child: SafeArea(
           child: BottomNavigationBar(
@@ -35,19 +36,19 @@ class MonstruoApp extends ConsumerWidget {
             elevation: 0,
             items: const [
               BottomNavigationBarItem(
-                icon:       Text('🐾', style: TextStyle(fontSize: 22)),
-                activeIcon: Text('🐾', style: TextStyle(fontSize: 26)),
-                label: 'My Monstruo',
-              ),
-              BottomNavigationBarItem(
-                icon:       Text('📋', style: TextStyle(fontSize: 22)),
-                activeIcon: Text('📋', style: TextStyle(fontSize: 26)),
-                label: 'Habits',
+                icon:       Text('⏱', style: TextStyle(fontSize: 22)),
+                activeIcon: Text('⏱', style: TextStyle(fontSize: 26)),
+                label: 'Today',
               ),
               BottomNavigationBarItem(
                 icon:       Text('📊', style: TextStyle(fontSize: 22)),
                 activeIcon: Text('📊', style: TextStyle(fontSize: 26)),
-                label: 'Stats',
+                label: 'Week',
+              ),
+              BottomNavigationBarItem(
+                icon:       Text('👤', style: TextStyle(fontSize: 22)),
+                activeIcon: Text('👤', style: TextStyle(fontSize: 26)),
+                label: 'Overview',
               ),
             ],
           ),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
-  // 🎨 Color Palette
   static const Color primary       = Color(0xFF6C63FF);
   static const Color primaryLight  = Color(0xFF9C94FF);
   static const Color secondary     = Color(0xFFFF6584);
@@ -16,22 +15,24 @@ class AppTheme {
   static const Color textPrimary   = Color(0xFFF8F8FF);
   static const Color textSecondary = Color(0xFFAAAAAA);
 
-  // Category colors
   static const Map<String, Color> categoryColors = {
-    'health': Color(0xFF6BCB77),
-    'mind':   Color(0xFF4DAEF0),
-    'work':   Color(0xFFFFD93D),
-    'social': Color(0xFFFF6584),
-    'self':   Color(0xFF9C94FF),
+    'work':     Color(0xFFFFD93D),
+    'learning': Color(0xFF4DAEF0),
+    'rest':     Color(0xFF6BCB77),
+    'social':   Color(0xFFFF6584),
+    'health':   Color(0xFF6BFFB8),
+    'creative': Color(0xFF9C94FF),
+    'other':    Color(0xFFAAAAAA),
   };
 
-  // Category icons
   static const Map<String, String> categoryIcons = {
-    'health': '💪',
-    'mind':   '📚',
-    'work':   '💼',
-    'social': '😄',
-    'self':   '🧘',
+    'work':     '💼',
+    'learning': '📚',
+    'rest':     '😴',
+    'social':   '💬',
+    'health':   '💪',
+    'creative': '🎨',
+    'other':    '⚡',
   };
 
   static ThemeData get darkTheme {
